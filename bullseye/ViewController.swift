@@ -18,13 +18,15 @@ class ViewController: UIViewController {
     var targetValue = 0
     
     @IBAction func showAlert(_ sender: Any) {
-        print("The value of the slider is: \(currentValue)")
+        print("The value of the slider is: \(currentValue). The target value is \(targetValue)")
+        startNewRound()
+        updateLabels()
     }
     
     
     @IBAction func sliderMoved(_ sender: UISlider) {
         currentValue = lroundf(sender.value)
-        showAlert(sender)
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,7 +43,7 @@ class ViewController: UIViewController {
     {
         targetValue = Int(arc4random_uniform(100)) + 1
         currentValue = 50
-        slider.value = 50
+        slider.value = Float(currentValue)
         
     }
     
