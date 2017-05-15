@@ -10,7 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var slider: UISlider!
+    
+    
+    @IBOutlet weak var targetLabel: UILabel!
     var currentValue = 0
+    var targetValue = 0
     
     @IBAction func showAlert(_ sender: Any) {
         print("The value of the slider is: \(currentValue)")
@@ -23,12 +28,26 @@ class ViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        startNewRound()
+        updateLabels()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func startNewRound()
+    {
+        targetValue = Int(arc4random_uniform(100)) + 1
+        currentValue = 50
+        slider.value = 50
+        
+    }
+    
+    func updateLabels()
+    {
+      targetLabel.text = String(targetValue)
     }
 
 
