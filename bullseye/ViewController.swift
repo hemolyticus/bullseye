@@ -10,8 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var currentValue = 0
+    
     @IBAction func showAlert(_ sender: Any) {
-        print("Hello iOS")
+        print("The value of the slider is: \(currentValue)")
+    }
+    
+    
+    @IBAction func sliderMoved(_ sender: UISlider) {
+        currentValue = lroundf(sender.value)
+        showAlert(sender)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
