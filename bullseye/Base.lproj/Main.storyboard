@@ -54,6 +54,9 @@
                                 <rect key="frame" x="20" y="269" width="71" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Start Over"/>
+                                <connections>
+                                    <action selector="startOver:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qtk-x8-S8K"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ofd-xf-InJ">
                                 <rect key="frame" x="526" y="277" width="22" height="22"/>
@@ -106,6 +109,8 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
+                        <outlet property="roundLabel" destination="fQD-Lf-Uo7" id="CcM-q9-Y5P"/>
+                        <outlet property="scoreLabel" destination="gBl-80-Vzi" id="FsB-f4-Sk7"/>
                         <outlet property="slider" destination="se6-fl-a6B" id="CJn-Os-9ZC"/>
                         <outlet property="targetLabel" destination="rRv-RW-5wD" id="Y0v-EI-6G5"/>
                     </connections>
