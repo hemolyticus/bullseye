@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B1617E491ECAA87600949D31 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1617E481ECAA87600949D31 /* AboutViewController.swift */; };
 		B1C2122E1EC956A20050198E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C2122D1EC956A20050198E /* AppDelegate.swift */; };
 		B1C212301EC956A20050198E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C2122F1EC956A20050198E /* ViewController.swift */; };
 		B1C212331EC956A20050198E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1C212311EC956A20050198E /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B1617E481ECAA87600949D31 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		B1C2122A1EC956A20050198E /* bullseye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bullseye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1C2122D1EC956A20050198E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1C2122F1EC956A20050198E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +40,7 @@
 		B1C212211EC956A20050198E = {
 			isa = PBXGroup;
 			children = (
+				B1617E481ECAA87600949D31 /* AboutViewController.swift */,
 				B1C2122C1EC956A20050198E /* bullseye */,
 				B1C2122B1EC956A20050198E /* Products */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1617E491ECAA87600949D31 /* AboutViewController.swift in Sources */,
 				B1C212301EC956A20050198E /* ViewController.swift in Sources */,
 				B1C2122E1EC956A20050198E /* AppDelegate.swift in Sources */,
 			);
@@ -302,6 +306,7 @@
 				B1C2123E1EC956A20050198E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
