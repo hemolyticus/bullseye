@@ -122,10 +122,10 @@
             </objects>
             <point key="canvasLocation" x="24.295774647887324" y="20.625"/>
         </scene>
-        <!--View Controller-->
+        <!--About View Controller-->
         <scene sceneID="Cxa-Yk-5Eb">
             <objects>
-                <viewController id="qNb-zX-xUw" sceneMemberID="viewController">
+                <viewController id="qNb-zX-xUw" customClass="AboutViewController" customModule="bullseye" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aaK-vE-Zdt"/>
                         <viewControllerLayoutGuide type="bottom" id="HFB-Pi-a7f"/>
@@ -150,6 +150,9 @@ Your goal is to place the slider as close as possible to the target value. The c
                                 <rect key="frame" x="265" y="270" width="39" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="close" destination="qNb-zX-xUw" eventType="touchUpInside" id="MgH-GS-CZC"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
